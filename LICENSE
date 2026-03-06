@@ -1,0 +1,8 @@
+The files in this repository are licensed as follows:
+
+- Files in the top-level directory (not belonging to any tool) are
+  released under the Unlicense. See https://unlicense.org/ for details.
+
+- Each tool may be licensed separately.
+  Please refer to the LICENSE or UNLICENSE file within
+  each tool's directory for its specific licensing terms.
