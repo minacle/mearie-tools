@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+FILEPATH="$(mktemp -q -t tmp.XXXXXXXXXX.png)"
+
+if ! screencapture -C -T 0 -t png -x "$FILEPATH"
+then
+	rm -f "$FILEPATH"
+	exit 1
+fi
+
+echo "$FILEPATH"

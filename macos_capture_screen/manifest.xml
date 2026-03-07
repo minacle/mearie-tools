@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function name="macos_capture_screen">
+    <description>
+        Takes a screenshot on macOS and saves it as an image file.
+        Returns the file path of the saved screenshot image.
+    </description>
+</function>
