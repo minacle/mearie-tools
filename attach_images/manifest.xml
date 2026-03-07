@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function name="attach_images">
+    <description>
+        Attaches images to the final response to be sent next.
+    </description>
+    <parameters>
+        <parameter name="image_urls">
+            <description>
+                List of image URLs to attach. Use file:// URLs for local files.
+            </description>
+            <list>
+                <string>
+                    <description>
+                        An image URL to attach.
+                        Use file:// URLs for local files.
+                    </description>
+                </string>
+            </list>
+        </parameter>
+    </parameters>
+</function>
