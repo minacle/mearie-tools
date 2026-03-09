@@ -1,13 +1,14 @@
-SRC := src/main.sh
-OUT := run.sh
+SRC := src/main.c
+OUT := run
+CC := clang
+CFLAGS := -std=c11 -Wall -Wextra -Wpedantic -O2
 
 $(OUT): $(SRC)
-	cp "$<" "$@"
-	chmod +x "$@"
+	$(CC) $(CFLAGS) $(SRC) -o $(OUT)
 
 .PHONY: all clean
 
 all: $(OUT)
 
 clean:
-	rm -f "$(OUT)"
+	rm -f run run.*
