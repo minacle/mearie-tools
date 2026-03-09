@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function name="get_system_information">
+    <description>
+        Retrieves system information such as OS details, hostname, and user information.
+        The information is returned in JSON format.
+    </description>
+</function>
