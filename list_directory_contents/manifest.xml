@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function name="list_directory_contents">
+    <description>
+        Lists the contents of a directory and returns structured metadata in JSON format.
+        Supports optional recursive traversal of subdirectories.
+    </description>
+    <parameters>
+        <parameter name="directory_path" type="string">
+            <description>
+                Absolute path of the directory to inspect.
+            </description>
+        </parameter>
+        <parameter name="recursive" type="boolean" optional="true">
+            <description>
+                Whether to recursively include contents of subdirectories.
+                Defaults to false when omitted.
+            </description>
+        </parameter>
+    </parameters>
+</function>
