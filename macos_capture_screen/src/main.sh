@@ -1,7 +1,8 @@
 #!/bin/sh
 set -eu
 
-FILEPATH="$(mktemp -q -t tmp.XXXXXXXXXX.png)"
+FILEPATH="$(mktemp -qu)"
+FILEPATH="${FILEPATH}.png"
 
 if ! screencapture -C -T 0 -t png -x "$FILEPATH"
 then
